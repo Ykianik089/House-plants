@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашние растения. Коллекция</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Poiret+One&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/globalf3.css">
+    <link rel="stylesheet" href="../css/collection.css">
+    <link rel="stylesheet" href="../css/modal.css">
+
+</head>
+ 
+<body>
+    <div class="background">
+        <div class="overlay"></div>
+        <div class="content">
+            <header class="header poiret-one-regular">
+                <div class="header-content">
+                    <h1 class="site-title">Домашние растения</h1>
+            
+                    <nav class="nav">
+                        <a href="main.html" class="nav-link">Главная</a>
+                        <a href="#" class="nav-link active">Коллекция</a>
+                    </nav>
+            
+                    <div class="header-right">
+                        <div class="header-register">
+                            <p><a href="entr.html"><p>Вход</p></a></p>
+                            <p><a href="registr.html">Регистрация</a></p>
+                        </div>
+                        <a href="profile.html" class="profile-link">
+                            <img class="profile" src="../images/profile3.jpg">
+                        </a>
+                    </div>
+            
+                    <button class="menu-toggle" aria-label="Открыть меню">
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                    </button>
+                </div>
+            
+                <div class="mobile-menu">
+                    <a href="main.html" class="mobile-nav-link">Главная</a>
+                    <a href="#" class="mobile-nav-link">Коллекция</a>
+                    <a href="entr.html" class="mobile-nav-link">Вход</a>
+                    <a href="registr.html" class="mobile-nav-link">Регистрация</a>
+                    <a href="profile.html" class="mobile-nav-link">Профиль</a>
+                </div>
+            </header>
+
+
+            <main class="poiret-one-regular"> 
+
+                <section class="intro">
+                    <p>Введите название растения или раздела, к которому хотите перейти</p>
+                    <p class="no-search">Например: «Оpхидея» или «Pp»</p>
+                </section>
+
+                <div class="search-block">
+                    <input type="text" id="search" placeholder="Поиск ..." oninput="highlightSearchResults()">
+                    <img src="../images/1731620008948.png" alt="Поиск" class="search-icon" onclick="scrollToSearchResult()">
+                </div>
+
+                <section id="А">
+                    <div class="section-header">Аа</div>
+                    <div class="container">
+                        <!-- АГАВА -->
+                        <div class="block" onclick="openModal('agava')">
+                            <img class="block-img" src="../images/агава.jpg" alt="Агава">
+                            <div class="block-overlay">
+                                <p class="block-text">Агава</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- АЗАЛИЯ -->
+                        <div class="block" onclick="openModal('azalea')">
+                            <img class="block-img" src="../images/азалия.jpg" alt="Азалия">
+                            <div class="block-overlay">
+                                <p class="block-text">Азалия</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- АРАУКАРИЯ -->
+                        <div class="block" onclick="openModal('araucarian')">
+                            <img class="block-img" src="../images/араукария.jpg" alt="Араукария">
+                            <div class="block-overlay">
+                                <p class="block-text">Араукария</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </section>
+        
+
+                <!-- ББББББ -->
+                <section id="Б">
+                    <div class="section-header">Бб</div>
+                    <div class="container">
+
+                        <!-- БЕГОНИЯ -->
+                        <div class="block" onclick="openModal('begonia')">
+                            <img class="block-img" src="../images/бегония.jpeg" alt="Бегония">
+                            <div class="block-overlay">
+                                <p class="block-text">Бегония</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    
+                        <!-- БАЛЬЗАМИН -->
+                        <div class="block" onclick="openModal('balsam')">
+                            <img class="block-img" src="../images/бальзамин.jpeg" alt="Бальзамин">
+                            <div class="block-overlay">
+                                <p class="block-text">Бальзамин</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    
+                        <!-- БРУГМАНСИЯ -->
+                        <div class="block" onclick="openModal('brugmansia')">
+                            <img class="block-img" src="../images/бругмансия.jpeg" alt="Бругмансия">
+                            <div class="block-overlay">
+                                <p class="block-text">Бругмансия</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>                    
+                </section>
+        
+
+
+                <section id="В">
+                    <div class="section-header">Вв</div>
+                    <div class="container">
+                        <!-- ВЕНЕРИН БАШМАЧОК -->
+                        <div class="block" onclick="openModal('venusin_shoes')">
+                            <img class="block-img" src="../images/венерин башмачок.jpg" alt="Венерин башмачок">
+                            <div class="block-overlay">
+                                <p class="block-text">Венерин башмачок</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ВЕРБЕНА -->
+                        <div class="block" onclick="openModal('verbena')">
+                            <img class="block-img" src="../images/вербена.jpeg" alt="Вербена">
+                            <div class="block-overlay">
+                                <p class="block-text">Вербена</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section>
+                    <div class="section-header ">Гг</div>
+                    <div class="container">
+                        <!-- ГЕРАНЬ -->
+                        <div class="block" onclick="openModal('geranium')">
+                            <img class="block-img" src="../images/герань.jpeg" alt="Герань">
+                            <div class="block-overlay">
+                                <p class="block-text">Герань</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ГУЗМАНИЯ -->
+                        <div class="block" onclick="openModal('guzmania')">
+                            <img class="block-img" src="../images/гузмания.jpg" alt="Гузмания">
+                            <div class="block-overlay">
+                                <p class="block-text">Гузмания</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ГИППЕАСТРУМ -->
+                        <div class="block" onclick="openModal('hippeastrum')">
+                            <img class="block-img" src="../images/гиппеаструм.jpg" alt="Гиппеаструм">
+                            <div class="block-overlay">
+                                <p class="block-text">Гиппеаструм</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                
+                <section>
+                    <div class="section-header poiret-one-regular">Дд</div>
+                    <div class="container">
+                       <!-- ДРАЦЕНА -->
+                        <div class="block" onclick="openModal('dracaena')">
+                            <img class="block-img" src="../images/драцена.jpg" alt="Драцена">
+                            <div class="block-overlay">
+                                <p class="block-text">Драцена</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ДЕКОРАТИВНЫЙ ПЕРЕЦ -->
+                        <div class="block" onclick="openModal('decorative_pepper')">
+                            <img class="block-img" src="../images/Декоративный перец.jpg" alt="Декоративный перец">
+                            <div class="block-overlay">
+                                <p class="block-text">Декоративный перец</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ДЕФФЕНБАХИЯ -->
+                        <div class="block" onclick="openModal('dieffenbachia')">
+                            <img class="block-img" src="../images/Деффенбахия.jpg" alt="Деффенбахия">
+                            <div class="block-overlay">
+                                <p class="block-text">Деффенбахия</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+
+                <section id="Е">
+                    <div class="section-header">Ее</div>
+                    <div class="container">
+                        <!-- ЁЛКА ДЕКОРАТИВНАЯ -->
+                        <div class="block" onclick="openModal('evpomansia_laurina')">
+                            <img class="block-img" src="../images/Евпомация лаурина.jpg" alt="Евпомация лаурина">
+                            <div class="block-overlay">
+                                <p class="block-text">Евпомация лаурина</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="Ё">
+                    <div class="section-header">Ёё</div>
+                    <div class="container">
+                        <!-- ЁЛКА ДЕКОРАТИВНАЯ -->
+                        <div class="block" onclick="openModal('elka')">
+                            <img class="block-img" src="../images/ёлка.jpg" alt="Ёлка декоративная">
+                            <div class="block-overlay">
+                                <p class="block-text">Ёлка декоративная</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="Ж">
+                    <div class="section-header">Жж</div>
+                    <div class="container">
+                       <!-- ЖАСМИН -->
+                        <div class="block" onclick="openModal('jasmine')">
+                            <img class="block-img" src="../images/Жасмин.jpg" alt="Жасмин">
+                            <div class="block-overlay">
+                                <p class="block-text">Жасмин</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ЖИРЯНКА -->
+                        <div class="block" onclick="openModal('sundew')">
+                            <img class="block-img" src="../images/Жирянка.jpg" alt="Жирянка">
+                            <div class="block-overlay">
+                                <p class="block-text">Жирянка</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="З">
+                    <div class="section-header">Зз</div>
+                    <div class="container">
+                       <!-- ЗАМИОКУЛКАС -->
+                        <div class="block" onclick="openModal('zamioculcas')">
+                            <img class="block-img" src="../images/Замиокулькас.jpg" alt="Замиокулькас">
+                            <div class="block-overlay">
+                                <p class="block-text">Замиокулькас</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ЗИГОКАКТУС -->
+                        <div class="block" onclick="openModal('zigocactus')">
+                            <img class="block-img" src="../images/Зигокактус.jpg" alt="Зигокактус">
+                            <div class="block-overlay">
+                                <p class="block-text">Зигокактус</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ЗОЛОТОЙ УС -->
+                        <div class="block" onclick="openModal('golden_mustache')">
+                            <img class="block-img" src="../images/Золотой ус.jpg" alt="Золотой ус">
+                            <div class="block-overlay">
+                                <p class="block-text">Золотой ус</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="И">
+                    <div class="section-header">Ии</div>
+                    <div class="container">
+                         <!-- ИПОМЕЯ -->
+                        <div class="block" onclick="openModal('ipomoea')">
+                            <img class="block-img" src="../images/Ипомея.jpg" alt="Ипомея">
+                            <div class="block-overlay">
+                                <p class="block-text">Ипомея</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="К">
+                    <div class="section-header">Кк</div>
+                    <div class="container">
+                        <!-- КАЛАНХОЭ -->
+                        <div class="block" onclick="openModal('kalanchoe')">
+                            <img class="block-img" src="../images/Каланхоэ.jpg" alt="Каланхоэ">
+                            <div class="block-overlay">
+                                <p class="block-text">Каланхоэ</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- КАКТУС -->
+                        <div class="block" onclick="openModal('cactus')">
+                            <img class="block-img" src="../images/Кактус.jpg" alt="Кактус">
+                            <div class="block-overlay">
+                                <p class="block-text">Кактус</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- КЛИВИЯ -->
+                        <div class="block" onclick="openModal('clivia')">
+                            <img class="block-img" src="../images/Кливия.jpg" alt="Кливия">
+                            <div class="block-overlay">
+                                <p class="block-text">Кливия</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="Л">
+                    <div class="section-header">Лл</div>
+                    <div class="container">
+                       <!-- ЛАВР -->
+                        <div class="block" onclick="openModal('laurel')">
+                            <img class="block-img" src="../images/Лавр.jpg" alt="Лавр">
+                            <div class="block-overlay">
+                                <p class="block-text">Лавр</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ЛИТОПС -->
+                        <div class="block" onclick="openModal('lithops')">
+                            <img class="block-img" src="../images/Литопс.jpg" alt="Литопс">
+                            <div class="block-overlay">
+                                <p class="block-text">Литопс</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ЛОБЕЛИЯ -->
+                        <div class="block" onclick="openModal('lobelia')">
+                            <img class="block-img" src="../images/Лобелия.jpg" alt="Лобелия">
+                            <div class="block-overlay">
+                                <p class="block-text">Лобелия</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="М">
+                    <div class="section-header">Мм</div>
+                    <div class="container">
+                        <!-- МОНСТЕРА -->
+                        <div class="block" onclick="openModal('monstera')">
+                            <img class="block-img" src="../images/Монстера.jpg" alt="Монстера">
+                            <div class="block-overlay">
+                                <p class="block-text">Монстера</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- МАРАКУЙЯ -->
+                        <div class="block" onclick="openModal('passion_fruit')">
+                            <img class="block-img" src="../images/Маракуйя.jpg" alt="Маракуйя">
+                            <div class="block-overlay">
+                                <p class="block-text">Маракуйя</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- МАРАНТА -->
+                        <div class="block" onclick="openModal('maranta')">
+                            <img class="block-img" src="../images/Маранта.jpg" alt="Маранта">
+                            <div class="block-overlay">
+                                <p class="block-text">Маранта</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="Н">
+                    <div class="section-header">Нн</div>
+                    <div class="container">
+                       <!-- НЕФРОЛЕПИС -->
+                        <div class="block" onclick="openModal('nephrolepis')">
+                            <img class="block-img" src="../images/Нефролепис.jpg" alt="Нефролепис">
+                            <div class="block-overlay">
+                                <p class="block-text">Нефролепис</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- НОЛИНА -->
+                        <div class="block" onclick="openModal('nolina')">
+                            <img class="block-img" src="../images/Нолина.jpg" alt="Нолина">
+                            <div class="block-overlay">
+                                <p class="block-text">Нолина</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- НАРЦИСС -->
+                        <div class="block" onclick="openModal('narcissus')">
+                            <img class="block-img" src="../images/Нарцисс.jpg" alt="Нарцисс">
+                            <div class="block-overlay">
+                                <p class="block-text">Нарцисс</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="О">
+                    <div class="section-header">Оо</div>
+                    <div class="container">
+                        <!-- ОРХИДЕЯ -->
+                        <div class="block" onclick="openModal('orchid')">
+                            <img class="block-img" src="../images/Орхидея.jpg" alt="Орхидея">
+                            <div class="block-overlay">
+                                <p class="block-text">Орхидея</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ОЛЕАНДР -->
+                        <div class="block" onclick="openModal('oleander')">
+                            <img class="block-img" src="../images/Олеандр.jpg" alt="Олеандр">
+                            <div class="block-overlay">
+                                <p class="block-text">Олеандр</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ОЧИТОК -->
+                        <div class="block" onclick="openModal('sedum')">
+                            <img class="block-img" src="../images/Очиток.jpg" alt="Очиток">
+                            <div class="block-overlay">
+                                <p class="block-text">Очиток</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="П">
+                    <div class="section-header">Пп</div>
+                    <div class="container">
+                       <!-- ПЕПЕРОМИЯ -->
+                        <div class="block" onclick="openModal('peperomia')">
+                            <img class="block-img" src="../images/Пеперомия.jpg" alt="Пеперомия">
+                            <div class="block-overlay">
+                                <p class="block-text">Пеперомия</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ПАХИРА -->
+                        <div class="block" onclick="openModal('pachira')">
+                            <img class="block-img" src="../images/Пахира.jpg" alt="Пахира">
+                            <div class="block-overlay">
+                                <p class="block-text">Пахира</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ПИЛЕИ -->
+                        <div class="block" onclick="openModal('pilea')">
+                            <img class="block-img" src="../images/Пилеи.jpg" alt="Пилея">
+                            <div class="block-overlay">
+                                <p class="block-text">Пилея</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="Р">
+                    <div class="section-header">Рр</div>
+                    <div class="container">
+                        <!-- РАПИС -->
+                        <div class="block" onclick="openModal('rapis')">
+                            <img class="block-img" src="../images/Рапис.jpg" alt="Рапис">
+                            <div class="block-overlay">
+                                <p class="block-text">Рапис</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="С">
+                    <div class="section-header">Сс</div>
+                    <div class="container">
+                       <!-- САНСЕВИЕРИЯ -->
+                        <div class="block" onclick="openModal('sansevieria')">
+                            <img class="block-img" src="../images/Сансевиерия.jpg" alt="Сансевиерия">
+                            <div class="block-overlay">
+                                <p class="block-text">Сансевиерия</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- СФАГНУМ -->
+                        <div class="block" onclick="openModal('sphagnum')">
+                            <img class="block-img" src="../images/Сфагнум.jpg" alt="Сфагнум">
+                            <div class="block-overlay">
+                                <p class="block-text">Сфагнум</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="Т">
+                    <div class="section-header">Тт</div>
+                    <div class="container">
+                        <!-- ТРАДЕСКАНЦИЯ -->
+                        <div class="block" onclick="openModal('tradescantia')">
+                            <img class="block-img" src="../images/Традесканция.jpg" alt="Традесканция">
+                            <div class="block-overlay">
+                                <p class="block-text">Традесканция</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ТОЛСТЯНКА -->
+                        <div class="block" onclick="openModal('crassula')">
+                            <img class="block-img" src="../images/Толстянка.jpg" alt="Толстянка">
+                            <div class="block-overlay">
+                                <p class="block-text">Толстянка</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ТИЛЛАНДСИЯ -->
+                        <div class="block" onclick="openModal('tillandsia')">
+                            <img class="block-img" src="../images/Тилландсия.jpg" alt="Тилландсия">
+                            <div class="block-overlay">
+                                <p class="block-text">Тилландсия</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="У">
+                    <div class="section-header">Уу</div>
+                    <div class="container">
+                       <!-- УЗОРНАЯ ФУКСИЯ -->
+                        <div class="block" onclick="openModal('fuchsia-pattern')">
+                            <img class="block-img" src="../images/Узорная фуксия.jpg" alt="Узорная фуксия">
+                            <div class="block-overlay">
+                                <p class="block-text">Узорная фуксия</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="Ф">
+                    <div class="section-header">Фф</div>
+                    <div class="container">
+                        <!-- ФИАЛКА -->
+                        <div class="block" onclick="openModal('violet')">
+                            <img class="block-img" src="../images/Фиалка.jpg" alt="Фиалка">
+                            <div class="block-overlay">
+                                <p class="block-text">Фиалка</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ФИЛОДЕНДРОН -->
+                        <div class="block" onclick="openModal('philodendron')">
+                            <img class="block-img" src="../images/Филодендрон.jpg" alt="Филодендрон">
+                            <div class="block-overlay">
+                                <p class="block-text">Филодендрон</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="Х">
+                    <div class="section-header">Хх</div>
+                    <div class="container">
+                        <!-- ХЛОРОФИТУМ -->
+                        <div class="block" onclick="openModal('chlorophytum')">
+                            <img class="block-img" src="../images/Хлорофитум.jpg" alt="Хлорофитум">
+                            <div class="block-overlay">
+                                <p class="block-text">Хлорофитум</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="Ц">
+                    <div class="section-header">Цц</div>
+                    <div class="container">
+                      <!-- ЦИССУС -->
+                        <div class="block" onclick="openModal('cissus')">
+                            <img class="block-img" src="../images/Циссус.jpg" alt="Циссус">
+                            <div class="block-overlay">
+                                <p class="block-text">Циссус</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ЦИКЛАМЕН -->
+                        <div class="block" onclick="openModal('cyclamen')">
+                            <img class="block-img" src="../images/Цикламен.jpg" alt="Цикламен">
+                            <div class="block-overlay">
+                                <p class="block-text">Цикламен</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ЦЕРЕУС -->
+                        <div class="block" onclick="openModal('cereus')">
+                            <img class="block-img" src="../images/Цереус.jpg" alt="Цереус">
+                            <div class="block-overlay">
+                                <p class="block-text">Цереус</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="Ч">
+                    <div class="section-header">Чч</div>
+                    <div class="container">
+                       <!-- ЧИСТЕЦ -->
+                        <div class="block" onclick="openModal('stachys')">
+                            <img class="block-img" src="../images/Чистец.jpg" alt="Чистец">
+                            <div class="block-overlay">
+                                <p class="block-text">Чистец</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="Ш">
+                    <div class="section-header">Шш</div>
+                    <div class="container">
+                        <!-- ШЕФЛЕРА -->
+                        <div class="block" onclick="openModal('schefflera')">
+                            <img class="block-img" src="../images/Шефлера.jpg" alt="Шефлера">
+                            <div class="block-overlay">
+                                <p class="block-text">Шефлера</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="Э">
+                    <div class="section-header">Ээ</div>
+                    <div class="container">
+                        <!-- ЭПИПРЕМНУМ -->
+                        <div class="block" onclick="openModal('epipremnum')">
+                            <img class="block-img" src="../images/Эпипремнум.jpg" alt="Эпипремнум">
+                            <div class="block-overlay">
+                                <p class="block-text">Эпипремнум</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+
+                        <!-- ЭПИСКИЛИЯ -->
+                        <div class="block" onclick="openModal('episcia')">
+                            <img class="block-img" src="../images/Эписцилия.jpg" alt="Эписцилия">
+                            <div class="block-overlay">
+                                <p class="block-text">Эписцилия</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="Ю">
+                    <div class="section-header">Юю</div>
+                    <div class="container">
+                        <!-- ЮККА -->
+                        <div class="block" onclick="openModal('ukka')">
+                            <img class="block-img" src="../images/Юкка.jpg" alt="Юкка">
+                            <div class="block-overlay">
+                                <p class="block-text">Юкка</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="Я">
+                    <div class="section-header">Яя</div>
+                    <div class="container">
+                         <!-- ЯКОБИНИЯ -->
+                        <div class="block" onclick="openModal('jacobinia')">
+                            <img class="block-img" src="../images/Якобиния.jpg" alt="Якобиния">
+                            <div class="block-overlay">
+                                <p class="block-text">Якобиния</p>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="modal-title" id="modal-title"></h2>
+                                <img class="modal-img" id="modal-img" src="" alt="">
+                                <div class="modal-info" id="manual-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            
+            <footer class="footer poiret-one-regular">
+                <div class="footer-content">
+                    <address class="footer-info">
+                        <p>Телефон: <a href="tel:+88005553535">+88005553535</a></p>
+                        <p>Почта: <a href="mailto:shalalal@mail.ru">shalalal@mail.ru</a></p>
+                    </address>
+                    <a href="#top" class="to-top">Вернуться к началу страницы ↑</a>
+                    <div class="social-buttons">
+                        <a href="#vk" id="vk" class="button">ВКонтакте</a>
+                        <a href="#telegram" id="telegram" class="button">Телеграм</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Кравченко Елена</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

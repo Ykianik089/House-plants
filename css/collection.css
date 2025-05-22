@@ -1,0 +1,193 @@
+main {
+    padding: 20px;
+}
+
+.intro {
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    margin: 50px 150px 20px 150px;
+}
+
+.search-block {
+  background-color: rgba(239, 255, 243, 0.188);
+  color: #fff;
+  border-radius: 10px;
+  padding: 8px 8px 8px 15px;
+  text-align: start;
+  margin: 0 120px 100px 120px;
+  position: relative;
+  display: flex; /* Используем flexbox */
+  align-items: center; /* Центрируем по вертикали */
+}
+
+#search {
+  flex: 1; /* Занимает всё доступное пространство */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-right: 60px; /* Добавляем отступ от иконки */
+}
+
+.search-icon {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* перенос блоки */
+    justify-content: center;
+    gap: 15px;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 0 0 10px 20px;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.block {
+    position: relative;
+    width: 350px; /* Фиксированная ширина блока */
+    height: 350px; /* Фиксированная высота блока */
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: rgba(136, 248, 164, 0.05); /* Цвет фона для случая, если нет картинки */
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box; /* Учитываем границы в общей ширине и высоте */
+    cursor: pointer; /* Курсор наводится как на кнопку */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Плавный переход для увеличения и яркости */
+  }
+  
+  .block-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(70%); /* Затемнение картинки */
+    transition: filter 0.3s ease;
+  }
+  
+  .block:hover {
+    transform: scale(1.02); /* Увеличение блока при наведении */
+  }
+  
+  .block:hover .block-img {
+    filter: brightness(90%); /* Усиление яркости картинки при наведении */
+  }
+  
+  .block-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Обнуляем возможные смещения */
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Градиент: от черного к прозрачному */
+    display: flex;
+    justify-content: center;
+    align-items: end; /* Расположение текста внизу слоя */
+    box-sizing: border-box; /* Учитываем внутренние отступы */
+    padding: 10px;
+  }
+  
+  .block-text {
+    color: #fff;
+    font-size: 35px;
+    margin: 0;
+  }
+
+
+  @media (max-width: 1010px) {
+    .block {
+      width: 250px;
+      height: 250px;
+    }
+
+    .intro {
+      font-size: 23px;
+    }    
+  }
+
+
+@media (max-width: 768px) {
+  .block {
+    flex: 1 1 calc(98% - 10px); /* Максимально широкая область на узких экранах */
+}
+
+
+  .intro {
+    font-size: 20px;
+    margin: 50px 100px 20px 100px;
+  }
+
+  .search-block {
+    padding: 5px 5px 5px 13px;
+    margin: 0 70px 80px 70px;
+  }
+  
+  #search {
+    padding: 10px;
+    font-size: 10px;
+    margin-right: 50px; /* Добавляем отступ от иконки */
+  }
+  
+  .search-icon {
+      width: 27px;
+      height: 27px;
+      right: 15px;
+  }
+
+  section {
+    margin-bottom: 70px;
+}
+
+.section-header {
+    font-size: 20px;
+}
+
+.block {
+    width: 200px; /* Фиксированная ширина блока */
+    height: 200px; /* Фиксированная высота блока */
+    margin: 20px;
+  }
+  
+  
+  .block-text {
+    font-size: 20px;
+    margin: 0;
+  }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+
+}
+
+
+
+@media (max-width: 400px) {
+    
+}
+
+

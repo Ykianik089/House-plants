@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    font-family: "Poiret One", sans-serif;
+}
+
+.poiret-one-regular {
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Фон контента */
+.background {
+    position: relative;
+    height: 100%;
+    margin: 0px;
+    background-image: url("../images/фон основа.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Полупрозрачное затемнение */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Контент выше затемнения */
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Шапка */
+.header {
+    background-color: rgba(52, 61, 51, 0.9);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+/* Базовые стили */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Название в шапке */
+.site-title {
+    font-size: 35px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Стили для навигации */
+.nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 130px;
+}
+
+/* Стили для ссылок-«кнопок» */
+.nav-link {
+    color: #fff;
+    font-size: 25px;
+    padding: 15px 15px;
+    border-radius: 4px;
+    background-color: rgba(73, 89, 73, 0.9); /* Темно-зеленый фон */
+    text-decoration: none;
+    transition: all 0.3s ease; 
+    display: inline-block;
+    position: relative;
+}
+
+/* Эффект увеличения при наведении */
+.nav-link:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
+/* Активный раздел (главная страница) */
+.nav-link.active {
+    background-color: rgba(0, 0, 0, 0.8); /* Черный фон для активной страницы */
+}
+
+/* Вход/Регистрация */
+.header-register {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение */
+    align-items: flex-end; /* Прижать к правому краю */
+    margin-right: 20px;
+}
+
+.header-register p {
+    margin: 0; /* Убираем отступы у абзацев */
+}
+
+.header-register a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none; 
+}
+
+/* Профиль */
+.profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 0; /* Убираем отступ */
+}
+
+/* Выравнивание блоков "Регистрация" и "Профиль" */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: rgba(85, 108, 85, 0.9); /* Зеленый цвет кнопки */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #689872; /* Темнее при наведении */
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-line {
+    width: 25px;
+    height: 1px;
+    background: white;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Скрытие мобильного меню */
+.mobile-menu {
+    display: none;
+    position: absolute; /* Фиксируем меню на экране */
+    top: 80px; /* Расположение под шапкой */
+    right: -80px;
+    width: fit-content;
+    background: rgba(43, 44, 43, 0.95); /* Более заметный фон */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease, left 0.3s ease; /* Добавляем плавность для left */
+    z-index: 100; /* Поверх остального контента */
+    border-radius: 0 0 10px 10px; /* Скругление углов */
+}
+
+.mobile-menu.active {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    opacity: 1;
+    transform: translateX(-80%); /* Центрируем */
+}
+
+.mobile-nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button .menu-toggle {
+    box-shadow: none;
+}
+
+/* адаптивка шапки */
+@media (max-width: 1010px) {
+    .nav,
+    .header-register,
+    .profile {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .site-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .site-title {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
