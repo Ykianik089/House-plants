@@ -122,58 +122,86 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
+/* Исправление для страницы профиля */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
 }
 
+/* Убираем дублирующий background, используем тот, что на .background */
 .background {
     position: relative;
     flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
     background-image: url("../images/фон основа.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
+    min-height: 100vh;
 }
 
 .overlay {
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
 }
 
 .content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     flex: 1 0 auto;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Стили для основного контейнера профиля */
+.profile-main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем контейнер по вертикали */
+    align-items: center;
+    width: 100%;
 }
 
 .profile-container {
-    position: relative;
-    z-index: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     max-width: 600px;
-    height: auto;
+    width: 90%; /* Чтобы не прилипало к краям */
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
     margin: 70px auto;
     padding: 80px 20px 70px 20px;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2px);
-    width: 90%; /* На узких экранах */
+    box-sizing: border-box;
 }
 
 .footer {
     flex-shrink: 0;
     width: 100%;
-    /* остальные стили футера */
+    background-color: rgba(52, 61, 51, 0.9);
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: auto; /* Прижимаем к низу */
 }

@@ -223,6 +223,10 @@ button:hover {
 
 
 
+.footer {
+    margin-top: auto !important; /* Переопределяем, если в других файлах есть margin */
+}
+
 
 
 
