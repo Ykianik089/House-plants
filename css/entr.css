@@ -93,3 +93,52 @@ button:hover {
     }
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Растягиваем body на всю высоту окна */
+    margin: 0;
+}
+
+.background {
+    position: relative;
+    flex: 1 0 auto; /* Заставляем .background занимать всё доступное пространство */
+    background-image: url("../images/фон основа.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Фон фиксируется и не обрезается */
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    flex: 1 0 auto; /* Контент тоже растягивается */
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    max-width: 500px;
+    margin: 120px auto 150px auto; /* Отступы сверху и снизу */
+    font-size: 20px;
+    width: 90%; /* На узких экранах форма не будет прилипать к краям */
+}
+
+.footer {
+    flex-shrink: 0; /* Футер не сжимается */
+    width: 100%;
+    /* остальные стили футера остаются из globalf2.css */
+}

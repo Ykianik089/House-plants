@@ -102,3 +102,29 @@ button:hover {
         padding: 7px 10px;
     }
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Растягиваем body на всю высоту окна */
+    margin: 0;
+}
+
+.background {
+    position: relative;
+    flex: 1 0 auto; /* Заставляем .background занимать всё доступное пространство */
+    background-image: url("../images/фон основа.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Фон фиксируется и не обрезается */
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    flex: 1 0 auto; /* Контент тоже растягивается */
+    display: flex;
+    flex-direction: column;
+}

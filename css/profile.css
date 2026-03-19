@@ -68,6 +68,12 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Эффекты на карточках */
+.stat-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
 .stat-card h3 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -76,12 +82,6 @@
 
 .stat-card p {
     font-size: 16px;
-}
-
-/* Эффекты на карточках */
-.stat-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
 /* Кнопки действий */
@@ -120,4 +120,60 @@
 .logout-button:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.background {
+    position: relative;
+    flex: 1 0 auto;
+    background-image: url("../images/фон основа.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    height: auto;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    margin: 70px auto;
+    padding: 80px 20px 70px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    width: 90%; /* На узких экранах */
+}
+
+.footer {
+    flex-shrink: 0;
+    width: 100%;
+    /* остальные стили футера */
 }
