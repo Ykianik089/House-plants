@@ -10,27 +10,33 @@
 
 /* Фон контента */
 .background {
-    position: relative;
-    height: 100%;
-    margin: 0px;
+    position: relative; /* Важно: родитель для overlay */
+    min-height: 100vh;
+    margin: 0;
     background-image: url("../images/фон основа.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Полупрозрачное затемнение */
+/* Полупрозрачное затемнение - теперь на всю высоту страницы */
 .overlay {
-    position: absolute;
+    position: absolute; /* fixed меняем на absolute */
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0; /* Растягивается на всю высоту родителя */
     background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+    pointer-events: none; /* Чтобы overlay не перехватывал клики */
 }
 
 /* Контент выше затемнения */
-.content {
+.header,
+.content,
+.footer {
     position: relative;
     z-index: 1;
 }
@@ -80,39 +86,39 @@
     font-size: 25px;
     padding: 15px 15px;
     border-radius: 4px;
-    background-color: rgba(73, 89, 73, 0.9); /* Темно-зеленый фон */
+    background-color: rgba(73, 89, 73, 0.9);
     text-decoration: none;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
     display: inline-block;
     position: relative;
 }
 
 /* Эффект увеличения при наведении */
 .nav-link:hover {
-    transform: scale(1.1); /* Увеличение при наведении */
+    transform: scale(1.1);
 }
 
 /* Активный раздел (главная страница) */
 .nav-link.active {
-    background-color: rgba(0, 0, 0, 0.8); /* Черный фон для активной страницы */
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Вход/Регистрация */
 .header-register {
     display: flex;
-    flex-direction: column; /* Вертикальное расположение */
-    align-items: flex-end; /* Прижать к правому краю */
+    flex-direction: column;
+    align-items: flex-end;
     margin-right: 20px;
 }
 
 .header-register p {
-    margin: 0; /* Убираем отступы у абзацев */
+    margin: 0;
 }
 
 .header-register a {
     color: #fff;
     font-size: 20px;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 /* Профиль */
@@ -120,7 +126,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    margin-left: 0; /* Убираем отступ */
+    margin-left: 0;
 }
 
 /* Выравнивание блоков "Регистрация" и "Профиль" */
@@ -132,7 +138,7 @@
 
 button {
     padding: 10px 15px;
-    background-color: rgba(85, 108, 85, 0.9); /* Зеленый цвет кнопки */
+    background-color: rgba(85, 108, 85, 0.9);
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -140,7 +146,7 @@ button {
 }
 
 button:hover {
-    background-color: #689872; /* Темнее при наведении */
+    background-color: #689872;
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
@@ -168,17 +174,17 @@ button:hover {
 /* Скрытие мобильного меню */
 .mobile-menu {
     display: none;
-    position: absolute; /* Фиксируем меню на экране */
-    top: 80px; /* Расположение под шапкой */
+    position: absolute;
+    top: 80px;
     right: -80px;
     width: fit-content;
-    background: rgba(43, 44, 43, 0.95); /* Более заметный фон */
+    background: rgba(43, 44, 43, 0.95);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     padding: 20px;
     opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease, left 0.3s ease; /* Добавляем плавность для left */
-    z-index: 100; /* Поверх остального контента */
-    border-radius: 0 0 10px 10px; /* Скругление углов */
+    transition: opacity 0.3s ease, transform 0.3s ease, left 0.3s ease;
+    z-index: 100;
+    border-radius: 0 0 10px 10px;
 }
 
 .mobile-menu.active {
@@ -186,7 +192,7 @@ button:hover {
     flex-direction: column;
     gap: 4px;
     opacity: 1;
-    transform: translateX(-80%); /* Центрируем */
+    transform: translateX(-80%);
 }
 
 .mobile-nav-link {
@@ -221,12 +227,6 @@ button:hover {
     }
 }
 
-
-
 .footer {
-    margin-top: auto !important; /* Переопределяем, если в других файлах есть margin */
+    margin-top: auto !important;
 }
-
-
-
-
